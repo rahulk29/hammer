@@ -398,7 +398,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_tt_tt_025C_1v80_3v30.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__gpiov2_pad_tt_tt_025C_1v80_3v30.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -420,7 +420,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ff_ff_100C_1v95_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__gpiov2_pad_wrapped_ff_ff_100C_1v95_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -442,7 +442,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ff_ff_n40C_1v95_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__gpiov2_pad_wrapped_ff_ff_n40C_1v95_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -464,7 +464,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ss_ss_100C_1v60_3v00.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__gpiov2_pad_wrapped_ss_ss_100C_1v60_3v00.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -486,7 +486,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_tt_tt_025C_1v80_3v30.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__gpiov2_pad_wrapped_tt_tt_025C_1v80_3v30.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -508,7 +508,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ff_100C_1v95_5v50_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vccd_lvc_clamped3_pad_ff_100C_1v95_5v50_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -530,7 +530,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ff_n40C_1v95_5v50_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vccd_lvc_clamped3_pad_ff_n40C_1v95_5v50_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -552,7 +552,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ss_100C_1v60_3v00_3v00.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vccd_lvc_clamped3_pad_ss_100C_1v60_3v00_3v00.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -574,7 +574,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_tt_025C_1v80_3v30_3v30.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vccd_lvc_clamped3_pad_tt_025C_1v80_3v30_3v30.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -596,7 +596,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped_pad_ff_100C_1v95_5v50_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vccd_lvc_clamped_pad_ff_100C_1v95_5v50_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -618,7 +618,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vccd_lvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -640,7 +640,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vccd_lvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -662,7 +662,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vccd_lvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -684,7 +684,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vdda_hvc_clamped_pad_ff_100C_1v95_5v50_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vdda_hvc_clamped_pad_ff_100C_1v95_5v50_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -706,7 +706,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vdda_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vdda_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -728,7 +728,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vdda_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vdda_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -750,7 +750,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vdda_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vdda_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -772,7 +772,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vddio_hvc_clamped_pad_ff_100C_1v95_5v50_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vddio_hvc_clamped_pad_ff_100C_1v95_5v50_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -794,7 +794,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vddio_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vddio_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -816,7 +816,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vddio_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vddio_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -838,7 +838,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vddio_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vddio_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -860,7 +860,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssa_hvc_clamped_pad_ff_100C_1v95_5v50_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vssa_hvc_clamped_pad_ff_100C_1v95_5v50_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -882,7 +882,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssa_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vssa_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -904,7 +904,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssa_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vssa_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -926,7 +926,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssa_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vssa_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -948,7 +948,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped3_pad_ff_100C_1v95_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vssd_lvc_clamped3_pad_ff_100C_1v95_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -970,7 +970,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped3_pad_ff_n40C_1v95_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vssd_lvc_clamped3_pad_ff_n40C_1v95_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -992,7 +992,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped3_pad_ss_100C_1v60_3v00.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vssd_lvc_clamped3_pad_ss_100C_1v60_3v00.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -1014,7 +1014,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped3_pad_tt_025C_1v80_3v30.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vssd_lvc_clamped3_pad_tt_025C_1v80_3v30.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -1036,7 +1036,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped3_pad_tt_100C_1v80_3v30.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vssd_lvc_clamped3_pad_tt_100C_1v80_3v30.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -1058,7 +1058,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped_pad_ff_100C_1v95_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vssd_lvc_clamped_pad_ff_100C_1v95_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -1080,7 +1080,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped_pad_ff_n40C_1v95_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vssd_lvc_clamped_pad_ff_n40C_1v95_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -1102,7 +1102,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped_pad_ss_100C_1v60_3v00.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vssd_lvc_clamped_pad_ss_100C_1v60_3v00.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -1124,7 +1124,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped_pad_tt_025C_1v80_3v30.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vssd_lvc_clamped_pad_tt_025C_1v80_3v30.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -1146,7 +1146,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped_pad_tt_100C_1v80_3v30.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vssd_lvc_clamped_pad_tt_100C_1v80_3v30.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -1168,7 +1168,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssio_hvc_clamped_pad_ff_100C_1v95_5v50_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vssio_hvc_clamped_pad_ff_100C_1v95_5v50_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -1190,7 +1190,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssio_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vssio_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -1212,7 +1212,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssio_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vssio_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -1234,7 +1234,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssio_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_ef_io__vssio_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
       "lef_file": "cache/sky130_ef_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_ef_io.spice",
@@ -1256,7 +1256,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_gpiov2_ff_ff_100C_1v95_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_fd_io__top_gpiov2_ff_ff_100C_1v95_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_fd_io.spice",
@@ -1278,7 +1278,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_gpiov2_ff_ff_n40C_1v95_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_fd_io__top_gpiov2_ff_ff_n40C_1v95_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_fd_io.spice",
@@ -1300,7 +1300,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_gpiov2_ss_ss_100C_1v60_3v00.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_fd_io__top_gpiov2_ss_ss_100C_1v60_3v00.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_fd_io.spice",
@@ -1322,7 +1322,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_gpiov2_tt_tt_025C_1v80_3v30.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_fd_io__top_gpiov2_tt_tt_025C_1v80_3v30.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_fd_io.spice",
@@ -1344,7 +1344,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_hvc_wpad_ff_100C_1v95_5v50_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_fd_io__top_ground_hvc_wpad_ff_100C_1v95_5v50_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_fd_io.spice",
@@ -1366,7 +1366,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_hvc_wpad_ff_n40C_1v95_5v50_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_fd_io__top_ground_hvc_wpad_ff_n40C_1v95_5v50_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_fd_io.spice",
@@ -1388,7 +1388,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_hvc_wpad_ss_100C_1v60_3v00_3v00.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_fd_io__top_ground_hvc_wpad_ss_100C_1v60_3v00_3v00.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_fd_io.spice",
@@ -1410,7 +1410,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_hvc_wpad_tt_025C_1v80_3v30_3v30.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_fd_io__top_ground_hvc_wpad_tt_025C_1v80_3v30_3v30.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_fd_io.spice",
@@ -1432,7 +1432,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_lvc_wpad_ff_100C_1v95_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_fd_io__top_ground_lvc_wpad_ff_100C_1v95_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_fd_io.spice",
@@ -1454,7 +1454,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_lvc_wpad_ff_n40C_1v95_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_fd_io__top_ground_lvc_wpad_ff_n40C_1v95_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_fd_io.spice",
@@ -1476,7 +1476,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_lvc_wpad_ss_100C_1v60_3v00.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_fd_io__top_ground_lvc_wpad_ss_100C_1v60_3v00.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_fd_io.spice",
@@ -1498,7 +1498,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_lvc_wpad_tt_025C_1v80_3v30.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_fd_io__top_ground_lvc_wpad_tt_025C_1v80_3v30.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_fd_io.spice",
@@ -1520,7 +1520,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_lvc_wpad_tt_100C_1v80_3v30.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_fd_io__top_ground_lvc_wpad_tt_100C_1v80_3v30.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_fd_io.spice",
@@ -1542,7 +1542,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_hvc_wpad_ff_100C_1v95_5v50_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_fd_io__top_power_hvc_wpad_ff_100C_1v95_5v50_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_fd_io.spice",
@@ -1564,7 +1564,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_hvc_wpad_ff_n40C_1v95_5v50_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_fd_io__top_power_hvc_wpad_ff_n40C_1v95_5v50_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_fd_io.spice",
@@ -1586,7 +1586,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_hvc_wpad_ss_100C_1v60_3v00_3v00.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_fd_io__top_power_hvc_wpad_ss_100C_1v60_3v00_3v00.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_fd_io.spice",
@@ -1608,7 +1608,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_hvc_wpad_tt_025C_1v80_3v30_3v30.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_fd_io__top_power_hvc_wpad_tt_025C_1v80_3v30_3v30.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_fd_io.spice",
@@ -1630,7 +1630,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_lvc_wpad_ff_100C_1v95_5v50_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_fd_io__top_power_lvc_wpad_ff_100C_1v95_5v50_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_fd_io.spice",
@@ -1652,7 +1652,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_lvc_wpad_ff_n40C_1v95_5v50_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_fd_io__top_power_lvc_wpad_ff_n40C_1v95_5v50_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_fd_io.spice",
@@ -1674,7 +1674,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_lvc_wpad_ss_100C_1v60_3v00_3v00.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_fd_io__top_power_lvc_wpad_ss_100C_1v60_3v00_3v00.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_fd_io.spice",
@@ -1696,7 +1696,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_lvc_wpad_tt_025C_1v80_3v30_3v30.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_fd_io__top_power_lvc_wpad_tt_025C_1v80_3v30_3v30.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_fd_io.spice",
@@ -1718,7 +1718,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_xres4v2_ff_ff_100C_1v95_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_fd_io__top_xres4v2_ff_ff_100C_1v95_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_fd_io.spice",
@@ -1740,7 +1740,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_xres4v2_ff_ff_n40C_1v95_5v50.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_fd_io__top_xres4v2_ff_ff_n40C_1v95_5v50.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_fd_io.spice",
@@ -1762,7 +1762,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_xres4v2_ss_ss_100C_1v60_3v00.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_fd_io__top_xres4v2_ss_ss_100C_1v60_3v00.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_fd_io.spice",
@@ -1784,7 +1784,7 @@
       ]
     },
     {
-      "nldm_liberty_file": "$SKY130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_xres4v2_tt_tt_025C_1v80_3v30.lib",
+      "nldm_liberty_file": "cache/fd_io__lib/sky130_fd_io__top_xres4v2_tt_tt_025C_1v80_3v30.lib",
       "verilog_sim": "$SKY130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef",
       "spice_file": "$SKY130A/libs.ref/sky130_fd_io/spice/sky130_fd_io.spice",

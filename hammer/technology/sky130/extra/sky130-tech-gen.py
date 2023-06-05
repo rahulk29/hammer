@@ -140,7 +140,7 @@ def main(args) -> int:
             lef_file = os.path.join(SKYWATER_LIBS,'lef', file_lib + '.lef')
 
         lib_entry = {
-            "nldm_liberty_file":  os.path.join(SKYWATER_LIBS,'lib', cornerfilename),
+            "nldm_liberty_file":  os.path.join('cache', 'fd_io__lib', cornerfilename),
             "verilog_sim":        os.path.join(SKYWATER_LIBS,'verilog', file_lib + '.v'),
             "lef_file":           lef_file,
             "spice_file":         os.path.join(SKYWATER_LIBS,'spice', file_lib + '.spice'),

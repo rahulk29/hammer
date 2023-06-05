@@ -32,6 +32,7 @@ class SKY130Tech(HammerTechnology):
         self.setup_techlef()
         self.setup_lvs_deck()
         self.setup_io_lefs()
+        self.setup_io_libs()
         print('Loaded Sky130 Tech')
 
 
@@ -186,6 +187,28 @@ class SKY130Tech(HammerTechnology):
                         for idx in port_idx:
                             sl[intv[0]+idx]=sl[intv[0]+idx].replace('PORT', 'PORT\n      CLASS CORE ;')
                 df.writelines(sl)
+
+    # map signal_voltage_type: analog to is_analog: true
+    def setup_io_libs(self) -> None:
+        sky130A_path = Path(self.get_setting('technology.sky130.sky130A'))
+        source_dir_path = sky130A_path / 'libs.ref' / 'sky130_fd_io' / 'lib'
+        if not source_dir_path.exists():
+            raise FileNotFoundError(f"IO LIB dir not found: {source_dir_path}")
+
+        cache_tech_dir_path = Path(self.cache_dir) / 'fd_io__lib'
+        os.makedirs(cache_tech_dir_path, exist_ok=True)
+
+        self.logger.info('Modifying FD IO LIBs...')  # log once to avoid spamming output
+        for source_path in source_dir_path.glob('*.lib'):
+            dest_path = cache_tech_dir_path / source_path.name
+            sig_volt_type_regex = re.compile(r'signal_voltage_type\s*:\s*("?)(?P<type>.*)\1\s*;')
+            with source_path.open('r') as sf, dest_path.open('w') as df:
+                for line in sf:
+                    df.write(line)
+                    match = sig_volt_type_regex.search(line)
+                    if match is not None and match.group('type') == 'analog':
+                        df.write(line[:match.start()] + 'is_analog : true;' + line[match.end():])
+
 
     def get_tech_par_hooks(self, tool_name: str) -> List[HammerToolHookAction]:
         hooks = {
