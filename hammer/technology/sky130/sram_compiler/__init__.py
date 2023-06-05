@@ -60,6 +60,10 @@ class SKY130SRAMGenerator(HammerSRAMGeneratorTool):
                 if not os.path.exists(lib_path):
                     self.logger.error(f"SKY130 {params.family} SRAM cache does not support corner: {corner_str}")
             
+            lef_file="{b}/{n}/{n}.lef".format(b=base_dir,n=sram_name)
+            if not os.path.exists(lef_file):
+                self.logger.error(f"No LEF for: {sram_name} ({lef_file})")
+            
             return ExtraLibrary(prefix=None, library=Library(
                 name=sram_name,
                 nldm_liberty_file=lib_path,
