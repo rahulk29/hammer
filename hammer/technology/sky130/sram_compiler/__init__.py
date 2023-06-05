@@ -55,7 +55,7 @@ class SKY130SRAMGenerator(HammerSRAMGeneratorTool):
             base_dir=self.get_setting('technology.sky130.sram22_sky130_macros')
             lib_path="{b}/{n}/{n}_{c}.rc.lib".format(b=base_dir,n=sram_name,c=corner_str)
             if not os.path.exists(lib_path):
-                self.logger.warn(f"SKY130 {params.family} SRAM cache does not have a PEX LIB, attempting to use schematic LIB")
+                self.logger.warning(f"SKY130 {params.family} SRAM cache does not have a PEX LIB, attempting to use schematic LIB")
                 lib_path="{b}/{n}/{n}_{c}.schematic.lib".format(b=base_dir,n=sram_name,c=corner_str)
                 if not os.path.exists(lib_path):
                     self.logger.error(f"SKY130 {params.family} SRAM cache does not support corner: {corner_str}")
