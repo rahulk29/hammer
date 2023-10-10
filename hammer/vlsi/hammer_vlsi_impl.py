@@ -81,14 +81,17 @@ class FlowLevel(Enum):
 
 PowerReport = NamedTuple('PowerReport', [
     ('waveform_path', str),
+    ('inst', Optional[str]),
     ('module', Optional[str]),
     ('levels', Optional[int]),
     ('start_time', Optional[TimeValue]),
     ('end_time', Optional[TimeValue]),
+    ('interval_size', Optional[TimeValue]),
     ('toggle_signal', Optional[str]),
     ('num_toggles', Optional[int]),
     ('frame_count', Optional[int]),
-    ('report_name', Optional[str])
+    ('report_name', Optional[str]),
+    ('output_formats', Optional[List[str]])
 ])
 
 
@@ -1607,12 +1610,16 @@ class HammerPowerTool(HammerTool):
         output = []
         for config in configs:
             report = PowerReport(
-                waveform_path=config["waveform_path"], module=None,
+                waveform_path=config["waveform_path"],
+                inst=None, module=None,
                 levels=None, start_time=None,
-                end_time=None, toggle_signal=None,
-                num_toggles=None, frame_count=None,
-                report_name=None
+                end_time=None, interval_size=None,
+                toggle_signal=None, num_toggles=None,
+                frame_count=None,
+                report_name=None, output_formats=None
             )
+            if "inst" in config:
+                report = report._replace(inst=config["inst"])
             if "module" in config:
                 report = report._replace(module=config["module"])
             if "levels" in config:
@@ -1621,6 +1628,8 @@ class HammerPowerTool(HammerTool):
                 report = report._replace(start_time=TimeValue(config["start_time"]))
             if "end_time" in config:
                 report = report._replace(end_time=TimeValue(config["end_time"]))
+            if "interval_size" in config:
+                report = report._replace(interval_size=TimeValue(config["interval_size"]))
             if "toggle_signal" in config:
                 report = report._replace(toggle_signal=config["toggle_signal"])
             if "num_toggles" in config:
@@ -1629,6 +1638,8 @@ class HammerPowerTool(HammerTool):
                 report = report._replace(frame_count=config["frame_count"])
             if "report_name" in config:
                 report = report._replace(report_name=config["report_name"])
+            if "output_formats" in config:
+                report = report._replace(output_formats=config["output_formats"])
             output.append(report)
         return output
 
@@ -2138,12 +2149,17 @@ class HasSDCSupport(HammerTool):
 
         clocks = self.get_clock_ports()
         time_unit = self.get_time_unit().value_prefix + self.get_time_unit().unit
+
         for clock in clocks:
-            # TODO: FIXME This assumes that library units are always in ns!!!
+            # hports causes some tools to crash
             if get_or_else(clock.generated, False):
+                if any("hport" in p for p in [get_or_else(clock.path, ""), get_or_else(clock.source_path, "")]):
+                    self.logger.error(f"In clock constraints, hports are not supported by some tools. Consider using ports/pins/hpins instead. Offending clock name: ${clock.name}")
                 output.append("create_generated_clock -name {n} -source {m_path} -divide_by {div} {path}".
                         format(n=clock.name, m_path=clock.source_path, div=clock.divisor, path=clock.path))
             elif clock.path is not None:
+                if "get_db hports" in clock.path:
+                    self.logger.error("get_db hports will cause some tools to crash. Consider querying hpins instead.")
                 output.append("create_clock {0} -name {1} -period {2}".format(clock.path, clock.name, clock.period.value_in_units(time_unit)))
             else:
                 output.append("create_clock {0} -name {0} -period {1}".format(clock.name, clock.period.value_in_units(time_unit)))
@@ -2170,7 +2186,9 @@ class HasSDCSupport(HammerTool):
         """Generate a fragment for I/O pin constraints."""
         output = []  # type: List[str]
 
-        default_output_load = float(self.get_setting("vlsi.inputs.default_output_load"))
+        cap_unit = self.get_cap_unit().value_prefix + self.get_cap_unit().unit
+
+        default_output_load = CapacitanceValue(self.get_setting("vlsi.inputs.default_output_load")).value_in_units(cap_unit)
 
         # Specify default load.
         output.append("set_load {load} [all_outputs]".format(
@@ -2179,14 +2197,14 @@ class HasSDCSupport(HammerTool):
 
         # Also specify loads for specific pins.
         for load in self.get_output_load_constraints():
-            output.append("set_load {load} [get_port \"{name}\"]".format(
-                load=load.load,
+            output.append("set_load {load} [get_port {name}]".format(
+                load=load.load.value_in_units(cap_unit),
                 name=load.name
             ))
 
         # Also specify delays for specific pins.
         for delay in self.get_delay_constraints():
-            output.append("set_{direction}_delay {delay} -clock {clock} [get_port \"{name}\"]".format(
+            output.append("set_{direction}_delay {delay} -clock {clock} [get_port {name}]".format(
                 delay=delay.delay.value_in_units(self.get_time_unit().value_prefix + self.get_time_unit().unit),
                 clock=delay.clock,
                 direction=delay.direction,

@@ -55,7 +55,8 @@ class Innovus(HammerPlaceAndRouteTool, CadenceTool):
                           lef=os.path.join(self.run_dir, "{top}ILM.lef".format(top=self.top_module)),
                           gds=self.output_gds_filename,
                           netlist=self.output_netlist_filename,
-                          sim_netlist=self.output_sim_netlist_filename)
+                          sim_netlist=self.output_sim_netlist_filename,
+                          sdcs=self.output_ilm_sdcs)
             ]
         else:
             self.output_ilms = []
@@ -138,9 +139,22 @@ class Innovus(HammerPlaceAndRouteTool, CadenceTool):
             return [os.path.join(self.run_dir, "{top}.par.spef".format(top=self.top_module))]
 
     @property
+    def output_ilm_sdcs(self) -> List[str]:
+        corners = self.get_mmmc_corners()
+        if corners:
+            filtered = list(filter(lambda c: c.type in [MMMCCornerType.Setup, MMMCCornerType.Hold], corners))
+            ctype_map = {MMMCCornerType.Setup: "setup", MMMCCornerType.Hold: "hold"}
+            return list(map(lambda c: os.path.join(self.run_dir, "{top}_postRoute_{corner_name}.{corner_type}_view.core.sdc".format(
+                top=self.top_module, corner_name=c.name, corner_type=ctype_map[c.type])), filtered))
+        else:
+            return [os.path.join(self.run_dir, "{top}_postRoute.core.sdc".format(top=self.top_module))]
+
+    @property
     def env_vars(self) -> Dict[str, str]:
         v = dict(super().env_vars)
         v["INNOVUS_BIN"] = self.get_setting("par.innovus.innovus_bin")
+        if self.version() >= self.version_number("221"):  # support critical region resynthesis with DDI
+            v["PATH"] = f'{os.environ.copy()["PATH"]}:{os.path.dirname(self.get_setting("par.innovus.innovus_bin").replace("INNOVUS", "GENUS"))}'
         return v
 
     @property
@@ -246,8 +260,6 @@ class Innovus(HammerPlaceAndRouteTool, CadenceTool):
         verbose_append("set_db timing_analysis_cppr both")
         # Use OCV mode for timing analysis by default
         verbose_append("set_db timing_analysis_type ocv")
-        # Match SDC time units to timing libraries
-        verbose_append("set_library_unit -time 1{}".format(self.get_time_unit().value_prefix + self.get_time_unit().unit))
 
         # Read LEF layouts.
         lef_files = self.technology.read_libs([
@@ -315,7 +327,8 @@ class Innovus(HammerPlaceAndRouteTool, CadenceTool):
         #        verbose_append(f"set_db route_design_top_layer {layers[1]}")
 
         # Set design effort.
-        verbose_append("set_db design_flow_effort {}".format(self.get_setting("par.innovus.design_flow_effort")))
+        verbose_append(f"set_db design_flow_effort {self.get_setting('par.innovus.design_flow_effort')}")
+        verbose_append(f"set_db design_power_effort {self.get_setting('par.innovus.design_power_effort')}")
 
         # Set "don't use" cells.
         for l in self.generate_dont_use_commands():
@@ -350,7 +363,7 @@ class Innovus(HammerPlaceAndRouteTool, CadenceTool):
             # TODO: Fix this once the stackup supports vias ucb-bar/hammer#354
             block_layer = self.get_setting("vlsi.technology.bump_block_cut_layer")  # type: str
             for bump in bumps.assignments:
-                self.append("create_bump -cell {cell} -location_type cell_center -name_format \"Bump_{c}.{r}\" -orient r0 -location \"{x} {y}\"".format(
+                self.append("create_bump -allow_overlap_control keep_all -cell {cell} -location_type cell_center -name_format \"Bump_{c}.{r}\" -orient r0 -location \"{x} {y}\"".format(
                     cell = bump.custom_cell if bump.custom_cell is not None else bumps.cell,
                     c = bump.x,
                     r = bump.y,
@@ -511,6 +524,19 @@ class Innovus(HammerPlaceAndRouteTool, CadenceTool):
             '''.format(sdc=self.post_synth_sdc), clean=True)
         if len(self.get_clock_ports()) > 0:
             # Ignore clock tree when there are no clocks
+            # If special cells are specified, explicitly set them instead of letting tool infer from libs
+            buffer_cells = self.technology.get_special_cell_by_type(CellType.CTSBuffer)
+            if len(buffer_cells) > 0:
+                self.append(f"set_db cts_buffer_cells {{{' '.join(buffer_cells[0].name)}}}")
+            inverter_cells = self.technology.get_special_cell_by_type(CellType.CTSInverter)
+            if len(inverter_cells) > 0:
+                self.append(f"set_db cts_inverter_cells {{{' '.join(inverter_cells[0].name)}}}")
+            gate_cells = self.technology.get_special_cell_by_type(CellType.CTSGate)
+            if len(gate_cells) > 0:
+                self.append(f"set_db cts_clock_gating_cells {{{' '.join(gate_cells[0].name)}}}")
+            logic_cells = self.technology.get_special_cell_by_type(CellType.CTSLogic)
+            if len(logic_cells) > 0:
+                self.append(f"set_db cts_logic_cells {{{' '.join(logic_cells[0].name)}}}")
             self.verbose_append("create_clock_tree_spec")
             if bool(self.get_setting("par.innovus.use_cco")):
                 # -hold is a secret flag for ccopt_design (undocumented anywhere)
@@ -531,8 +557,9 @@ class Innovus(HammerPlaceAndRouteTool, CadenceTool):
         else:
             decap_cells = decaps[0].name
             decap_caps = []  # type: List[float]
+            cap_unit = self.get_cap_unit().value_prefix + self.get_cap_unit().unit
             if decaps[0].size is not None:
-                decap_caps = list(map(lambda x: CapacitanceValue(x).value_in_units("fF"), decaps[0].size))
+                decap_caps = list(map(lambda x: CapacitanceValue(x).value_in_units(cap_unit), decaps[0].size))
             if len(decap_cells) != len(decap_caps):
                 self.logger.error("Each decap cell in the name list must have a corresponding decapacitance value in the size list.")
             decap_consts = list(filter(lambda x: x.target=="capacitance", self.get_decap_constraints()))
@@ -552,7 +579,7 @@ class Innovus(HammerPlaceAndRouteTool, CadenceTool):
                             assert isinstance(const.height, Decimal)
                             area_str = " ".join(("-area", str(const.x), str(const.y), str(const.x+const.width), str(const.y+const.height)))
                         self.verbose_append("add_decaps -effort high -total_cap {CAP} {AREA}".format(
-                            CAP=const.capacitance.value_in_units("fF"), AREA=area_str))
+                            CAP=const.capacitance.value_in_units(cap_unit), AREA=area_str))
 
         if len(stdfillers) == 0:
             self.logger.warning(
@@ -824,6 +851,10 @@ class Innovus(HammerPlaceAndRouteTool, CadenceTool):
         self.verbose_append("write_lef_abstract -5.8 {top}ILM.lef".format(top=self.top_module))
         self.verbose_append("write_ilm -model_type all -to_dir {ilm_dir_name} -type_flex_ilm ilm".format(
             ilm_dir_name=self.ilm_dir_name))
+        # Need to append -hierarchical after get_pins in SDCs for parent timing analysis
+        for sdc_out in self.output_ilm_sdcs:
+            self.append('gzip -d -c {ilm_dir_name}/mmmc/ilm_data/{top}/{sdc_in}.gz | sed "s/get_pins/get_pins -hierarchical/g" > {sdc_out}'.format(
+                ilm_dir_name=self.ilm_dir_name, top=self.top_module, sdc_in=os.path.basename(sdc_out), sdc_out=sdc_out))
         self.ran_write_ilm = True
         return True
 
@@ -1030,22 +1061,22 @@ class Innovus(HammerPlaceAndRouteTool, CadenceTool):
                             ury=constraint.y+constraint.height
                         ))
                     if ObstructionType.Route in obs_types:
-                        output.append("create_route_blockage -except_pg_nets -layers {{{layers}}} -spacing 0 -{area_flag} {{{x} {y} {urx} {ury}}}".format(
+                        output.append("create_route_blockage -except_pg_nets -{layers} -spacing 0 -{area_flag} {{{x} {y} {urx} {ury}}}".format(
                             x=constraint.x,
                             y=constraint.y,
                             urx=constraint.x+constraint.width,
                             ury=constraint.y+constraint.height,
                             area_flag="rects" if self.version() >= self.version_number("181") else "area",
-                            layers="all" if constraint.layers is None else " ".join(get_or_else(constraint.layers, []))
+                            layers="all {route}" if constraint.layers is None else f'layers {{{" ".join(get_or_else(constraint.layers, []))}}}'
                         ))
                     if ObstructionType.Power in obs_types:
-                        output.append("create_route_blockage -pg_nets -layers {{{layers}}} -{area_flag} {{{x} {y} {urx} {ury}}}".format(
+                        output.append("create_route_blockage -pg_nets -{layers} -{area_flag} {{{x} {y} {urx} {ury}}}".format(
                             x=constraint.x,
                             y=constraint.y,
                             urx=constraint.x+constraint.width,
                             ury=constraint.y+constraint.height,
                             area_flag="rects" if self.version() >= self.version_number("181") else "area",
-                            layers="all" if constraint.layers is None else " ".join(get_or_else(constraint.layers, []))
+                            layers="all {route}" if constraint.layers is None else f'layers {{{" ".join(get_or_else(constraint.layers, []))}}}'
                         ))
                 else:
                     assert False, "Should not reach here"
