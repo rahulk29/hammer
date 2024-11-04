@@ -10,6 +10,10 @@
     {
       "id": "$SKY130A",
       "path": "technology.sky130.sky130A"
+    },
+    {
+      "id": "$SRAM22_SKY130_MACROS",
+      "path": "technology.sky130.sram22_sky130_macros"
     }
   ],
   "layer_map_file": "$SKY130_NDA/s8/V2.0.1/VirtuosoOA/libs/technology_library/technology_library.layermap",
@@ -36,6 +40,14 @@
   ],
   "additional_lvs_text": "",
   "libraries": [
+    {
+      "spice_file": "$SRAM22_SKY130_MACROS/sram22.spice",
+      "provides": [
+        {
+          "lib_type": "technology"
+        }
+      ]
+    },
     {
       "lef_file": "cache/sky130_fd_sc_hd__nom.tlef",
       "verilog_sim": "cache/primitives.v",
