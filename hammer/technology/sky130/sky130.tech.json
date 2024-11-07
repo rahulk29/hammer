@@ -1747,7 +1747,7 @@
     {
       "cell_type": "endcap",
       "name": [
-        "sky130_fd_sc_hd__tap_1"
+        "sky130_fd_sc_hd__tapvpwrvgnd_1"
       ]
     },
     {
