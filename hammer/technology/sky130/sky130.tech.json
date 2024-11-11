@@ -62,6 +62,7 @@
       "verilog_sim": "cache/sky130_fd_sc_hd.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef",
       "gds_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds",
+      "qrc_techfile": "/tools/commercial/skywater/swtech130/skywater-src-nda/s8/V2.0.1/PEX/QRC/5LM/qrcTechFile",
       "corner": {
         "nmos": "fast",
         "pmos": "fast",
@@ -83,6 +84,7 @@
       "verilog_sim": "cache/sky130_fd_sc_hd.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef",
       "gds_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds",
+      "qrc_techfile": "/tools/commercial/skywater/swtech130/skywater-src-nda/s8/V2.0.1/PEX/QRC/5LM/qrcTechFile",
       "corner": {
         "nmos": "fast",
         "pmos": "fast",
@@ -104,6 +106,7 @@
       "verilog_sim": "cache/sky130_fd_sc_hd.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef",
       "gds_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds",
+      "qrc_techfile": "/tools/commercial/skywater/swtech130/skywater-src-nda/s8/V2.0.1/PEX/QRC/5LM/qrcTechFile",
       "corner": {
         "nmos": "fast",
         "pmos": "fast",
@@ -125,6 +128,7 @@
       "verilog_sim": "cache/sky130_fd_sc_hd.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef",
       "gds_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds",
+      "qrc_techfile": "/tools/commercial/skywater/swtech130/skywater-src-nda/s8/V2.0.1/PEX/QRC/5LM/qrcTechFile",
       "corner": {
         "nmos": "fast",
         "pmos": "fast",
@@ -146,6 +150,7 @@
       "verilog_sim": "cache/sky130_fd_sc_hd.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef",
       "gds_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds",
+      "qrc_techfile": "/tools/commercial/skywater/swtech130/skywater-src-nda/s8/V2.0.1/PEX/QRC/5LM/qrcTechFile",
       "corner": {
         "nmos": "fast",
         "pmos": "fast",
@@ -167,6 +172,7 @@
       "verilog_sim": "cache/sky130_fd_sc_hd.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef",
       "gds_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds",
+      "qrc_techfile": "/tools/commercial/skywater/swtech130/skywater-src-nda/s8/V2.0.1/PEX/QRC/5LM/qrcTechFile",
       "corner": {
         "nmos": "fast",
         "pmos": "fast",
@@ -188,6 +194,7 @@
       "verilog_sim": "cache/sky130_fd_sc_hd.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef",
       "gds_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds",
+      "qrc_techfile": "/tools/commercial/skywater/swtech130/skywater-src-nda/s8/V2.0.1/PEX/QRC/5LM/qrcTechFile",
       "corner": {
         "nmos": "slow",
         "pmos": "slow",
@@ -209,6 +216,7 @@
       "verilog_sim": "cache/sky130_fd_sc_hd.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef",
       "gds_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds",
+      "qrc_techfile": "/tools/commercial/skywater/swtech130/skywater-src-nda/s8/V2.0.1/PEX/QRC/5LM/qrcTechFile",
       "corner": {
         "nmos": "slow",
         "pmos": "slow",
@@ -230,6 +238,7 @@
       "verilog_sim": "cache/sky130_fd_sc_hd.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef",
       "gds_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds",
+      "qrc_techfile": "/tools/commercial/skywater/swtech130/skywater-src-nda/s8/V2.0.1/PEX/QRC/5LM/qrcTechFile",
       "corner": {
         "nmos": "slow",
         "pmos": "slow",
@@ -251,6 +260,7 @@
       "verilog_sim": "cache/sky130_fd_sc_hd.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef",
       "gds_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds",
+      "qrc_techfile": "/tools/commercial/skywater/swtech130/skywater-src-nda/s8/V2.0.1/PEX/QRC/5LM/qrcTechFile",
       "corner": {
         "nmos": "slow",
         "pmos": "slow",
@@ -272,6 +282,7 @@
       "verilog_sim": "cache/sky130_fd_sc_hd.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef",
       "gds_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds",
+      "qrc_techfile": "/tools/commercial/skywater/swtech130/skywater-src-nda/s8/V2.0.1/PEX/QRC/5LM/qrcTechFile",
       "corner": {
         "nmos": "slow",
         "pmos": "slow",
@@ -293,6 +304,7 @@
       "verilog_sim": "cache/sky130_fd_sc_hd.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef",
       "gds_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds",
+      "qrc_techfile": "/tools/commercial/skywater/swtech130/skywater-src-nda/s8/V2.0.1/PEX/QRC/5LM/qrcTechFile",
       "corner": {
         "nmos": "slow",
         "pmos": "slow",
@@ -314,6 +326,7 @@
       "verilog_sim": "cache/sky130_fd_sc_hd.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef",
       "gds_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds",
+      "qrc_techfile": "/tools/commercial/skywater/swtech130/skywater-src-nda/s8/V2.0.1/PEX/QRC/5LM/qrcTechFile",
       "corner": {
         "nmos": "slow",
         "pmos": "slow",
@@ -335,6 +348,7 @@
       "verilog_sim": "cache/sky130_fd_sc_hd.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef",
       "gds_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds",
+      "qrc_techfile": "/tools/commercial/skywater/swtech130/skywater-src-nda/s8/V2.0.1/PEX/QRC/5LM/qrcTechFile",
       "corner": {
         "nmos": "slow",
         "pmos": "slow",
@@ -356,6 +370,7 @@
       "verilog_sim": "cache/sky130_fd_sc_hd.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef",
       "gds_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds",
+      "qrc_techfile": "/tools/commercial/skywater/swtech130/skywater-src-nda/s8/V2.0.1/PEX/QRC/5LM/qrcTechFile",
       "corner": {
         "nmos": "typical",
         "pmos": "typical",
@@ -377,6 +392,7 @@
       "verilog_sim": "cache/sky130_fd_sc_hd.v",
       "lef_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef",
       "gds_file": "$SKY130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds",
+      "qrc_techfile": "/tools/commercial/skywater/swtech130/skywater-src-nda/s8/V2.0.1/PEX/QRC/5LM/qrcTechFile",
       "corner": {
         "nmos": "typical",
         "pmos": "typical",
